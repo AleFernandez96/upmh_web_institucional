@@ -40,7 +40,7 @@ Sitio oficial de la <a href="http://www.upmetropolitana.edu.mx/"> Universidad Po
 
 <img src="http://www.upmetropolitana.edu.mx/template/assets/img/capturas/5.png">
 
-<img src="http://www.upmetropolitana.edu.mx/template/assets/img/capturas/6.jpg">
+<img src="http://www.upmetropolitana.edu.mx/template/assets/img/capturas/6.png">
 
 <img src="http://www.upmetropolitana.edu.mx/template/assets/img/capturas/2.png">
 
