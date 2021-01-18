@@ -36,4 +36,5 @@ Sitio oficial de la <a href="http://www.upmetropolitana.edu.mx/"> Universidad Po
   <li><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"> Bootstrap </a></li>
 </ul>
 
-<iframe src="https://drive.google.com/file/d/1k56OP1BNXR6DgpUCqXZNU812mH15HOXL/preview" width="640" height="480"></iframe>
+<img src="http://www.upmetropolitana.edu.mx/template/assets/img/capturas/Captura%20de%20pantalla%20(269).png">
+
