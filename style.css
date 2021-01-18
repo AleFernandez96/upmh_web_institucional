@@ -1,0 +1,1762 @@
+-------------------------------------------------------
+Departamento de sistemas informáticos UPMH
+Hoja de estilos web institucional
+La diseñó el Ale
+---------------------------------------------------------- */
+
+/* 183110235 */
+/* Colores: */
+/* #092432 */
+/* #084866 */
+/* #593078 */
+/* #3f3731 */
+/* #f1f3f5 */
+
+/* -------------------------------------
+Secciones:
+general
+botón ir arriba
+preloader
+botones de accesibilidad (audio, tamaño de letras)
+mensaje (instrucciones para accesibilidad)
+
+header barra de navegación navbar
+top bar (nav azul)
+sección inicio
+
+header (titulos de las secciones) #section-header
+
+sección publicaciones
+sección oferta educativa
+sección estudiantes
+sección vida universitaria
+Footer
+
+página con accesibilidad
+quienes somos, acerca de
+carreras
+-------------------------------------
+
+/* ----------------------------------
+general
+---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+
+body {
+  background: #fff;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+}
+
+/* tables */
+
+#table-striped .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(217, 235, 235) !important;
+}
+
+#table-striped .table-hover tbody tr:hover {
+  background-color: rgba(122, 114, 81, 0.7) !important;
+  color: rgb(112, 24, 78) !important;
+}
+
+#table-striped .thead-green {
+  background-color: rgb(0, 99, 71) !important;
+  color: white !important;
+}
+
+.bg-color-2 { background-color: #f1f3f5; }
+
+.bg-purple { background-color: #593078; color: #ffff; }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.f-w-1 { font-weight: 600; }
+.f-w-2 { font-weight: 700; }
+.f-w-3 { font-weight: 800; }
+.f-w-4 { font-weight: 900; }
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+a {
+  color: #111;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #111;
+  outline: none;
+  text-decoration: none;
+}
+
+.download-1 { text-decoration: underline !important; }
+
+.acc-sound {
+  font-size: 110%;
+  text-decoration: underline; 
+}
+
+.modalButton { cursor: pointer; }
+
+.btn-main:hover { 
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;-webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+/* Botón con div purple */
+
+.div-bg-purple {
+  background: #593078; 
+  width: 258px; 
+  padding: 4px; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 4px;
+}
+
+.div-bg-purple-home {
+  background: #593078; 
+  width: 278px; 
+  padding: 4px; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.btn-bg-border-purple { 
+  background-color: transparent; 
+  color: #fff; 
+  border: 2px solid #fff; 
+  width: 250px !important; 
+  font-weight: 600;
+}
+
+.btn-bg-border-purple:hover, .bg-border-purple:active, .bg-border-purple:focus { 
+  background-color: #ffff; 
+  color: #593078; 
+  border: 2px solid #593078;
+}
+
+/* Botón gris */
+.btn-gray, 
+.btn-gray:hover, 
+.btn-gray:focus  { 
+  background: #f1f3f5; 
+  color: #444;
+  border-color: #f1f3f5;
+}
+
+.btn-white, 
+.btn-white:hover, 
+.btn-white:focus  { 
+  background: #fff; 
+  border-radius: 4px !important;
+  color: #444;
+  font-weight: 700;
+  border: 2px solid #593078;
+  padding: 18px !important;
+  width: 270px;
+}
+/* Botón morado */
+.btn-purple, 
+.btn-purple:hover, 
+.btn-purple:focus  { 
+  background: #593078; 
+  color: #fff;
+  border-color: #593078;  
+}
+.btn-purple {
+  border-radius: 4px !important;
+}
+.btn-purple-2, 
+.btn-purple-2:hover, 
+.btn-purple-2:focus  { 
+  height: 40px;
+  width: 40px;
+  background: #593078; 
+  color: #fff;
+  border-color: #593078;
+}
+/* Botón azul */
+.btn-blue-1,  
+.btn-blue-1:focus  { 
+  background: #092432; 
+  color: #fff;
+  border-color: #092432;
+}
+
+.btn-blue-1:hover { color: #fff; 
+  background: #084866; 
+  border-color: #084866; 
+}
+/* Botón azul color 2 */
+.btn-blue-2,  
+.btn-blue-2:focus  { 
+  background: #084866; 
+  color: #fff;
+  border-color: #084866;
+}
+
+.btn-blue-2:hover { color: #fff; 
+  background: #092432; 
+  border-color: #092432;  
+}
+
+/* Botón ir arriba */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #092432;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+/* imágenes con hover (animación) */
+.img-transition{ transition: all 0.3s ease-in-out; }
+.img-transition:hover { 
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+/* Ion icono */
+ion-icon {
+  font-size: 48px;
+}
+
+/*--------------------------------------------------------------
+preloader
+--------------------------------------------------------------*/
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* background-color: #fffaff; */
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/*--------------------------------------------------------------
+botones accesibilidad
+--------------------------------------------------------------*/
+.cerrar-accesibilidad p {
+  /* background-color:#fff; */
+  color:#084866;
+  padding:0px;
+  cursor:pointer;
+  border-radius: 50%;
+  float:left;
+  position:fixed;
+  right:50px;
+  top:200px;
+  width:25px;
+  height: 25px;
+  z-index: 1100;
+  font-weight: 700;
+}
+.ul-accesibilidad li{
+  list-style-type:none;
+  background-color:#fff;
+  color:#efefef;
+  height:72px;
+  padding:0px;
+  margin:0px 0px 1px 0px;
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+.ul-accesibilidad li:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.ul-accesibilidad li img{
+  float:left;
+  margin:5px 4px;
+  margin-right:5px;
+}
+
+/*--------------------------------------------------------------
+audio
+--------------------------------------------------------------*/
+
+.audio-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:5px;
+  top:130px;
+  width:115px;
+  z-index: 1100;
+}
+
+/*--------------------------------------------------------------
+aumentar
+--------------------------------------------------------------*/
+
+.aumentar-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:5px;
+  top:210px;
+  width:115px;
+  z-index: 1100;
+}
+
+.auentar-container img { padding-top:  }
+
+/*--------------------------------------------------------------
+disminuir
+--------------------------------------------------------------*/
+
+.disminuir-container{
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:5px;
+  top:290px;
+  width:115px;
+  z-index: 1100;
+}
+
+
+/*--------------------------------------------------------------
+mensaje (instrucciones para accesibilidad)
+--------------------------------------------------------------*/
+
+#mensaje { display: block; }
+
+.emergente { 
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  width:450px;
+  z-index: 1100;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 29px 0 rgba(71, 53, 120, 0.4);
+  padding: 30px;
+}
+
+.btn-cerrar-mensaje { 
+  float: right; 
+  cursor: pointer; 
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cerrar-mensaje:hover { 
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5); 
+}
+
+.btn-cerrar-mensaje i { color: #593078; }
+
+.div-mensaje { 
+  background: #593078; 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.emergente p { 
+  font-weight: 400; 
+  color: #fff 
+}
+
+
+/* Termina accesibilidad */
+
+
+/*--------------------------------------------------------------
+header barra de navegación navbar
+--------------------------------------------------------------*/
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #084866;
+}
+#header.header-scrolled,
+#header.header-pages {
+  height: 80px;
+  padding: 15px 0;
+  background-color: #084866;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+}
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: none;
+}
+#header .logo h5 {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 17px;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  /* letter-spacing: 3px; */
+  font-family: "Open Sans", sans-serif;
+}
+#header .logo h5 a,
+#header .logo h5 a:hover {
+  color: #ffff;
+  text-decoration: none;
+}
+#header .logo img {
+
+  border-radius: 50%; 
+  width: 50px;
+  padding: 0;
+  margin: -5px 0;
+  max-height: 50px;
+}
+
+.margin-blue {
+    height: 80px !important; background-color: #084866 !important;
+  }
+/*--------------------------------------------------------------
+top bar
+--------------------------------------------------------------*/
+
+#topbar {
+  margin-top: -20px !important;
+  padding: 15px;
+  font-size: 95%;
+  transition: all 0.5s;
+  background: #092432 !important;
+}
+#topbar .social-links {
+  text-align: right;
+}
+#topbar .social-links a {
+  color: #ffff;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+}
+#topbar .social-links a:hover {
+  color: #ffff;
+}
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+
+/*--------------------------------------------------------------
+inicio
+--------------------------------------------------------------*/
+
+#inicio {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background: #f5f8fd url("https://upgto.edu.mx/wp-content/uploads/2020/01/ok-scaled.jpg") center bottom no-repeat; */
+  background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/fondos/p2_Mesa de trabajo 1.jpg") center center repeat;
+  background-size: cover;
+  /* -webkit-filter:opacity(80%); */
+}
+
+#inicio a {
+  font-size: 120%;
+}
+
+#inicio h4 {
+  color: #fff;
+  font-size: 190%;
+}
+
+#inicio .inicio-info h2 {
+  color: #593078;
+  margin-bottom: 40px;
+  font-size: 320%;
+  font-weight: 700;
+}
+#inicio .inicio-info h2 span {
+  color: #fff;
+}
+#inicio .inicio-info .btn-get-started,
+#inicio .inicio-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #593078;
+  color: #fff;
+  visibility: hidden;
+}
+#inicio .inicio-info .btn-get-started:hover,
+#inicio .inicio-info .btn-services:hover {
+  background: #3f3731;
+}
+
+#inicio .btn-white { border-radius: 20px; }
+
+#intro-bg-white {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  background: #fff;
+}
+
+/*--------------------------------------------------------------
+barra de navegación navbar
+--------------------------------------------------------------*/
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 95%;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-weight: 600; */
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav .drop-down ul {
+  display: block;
+  position: absolute;
+  right: 0;
+  /* top: calc(100% - 30px); */
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  padding: 5px 0;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
+  border-radius: 5px;
+}
+
+.main-nav .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.main-nav .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.main-nav .drop-down ul a {
+  padding: 6px 20px;
+  /* font-size: 16px; */
+  /* font-weight: 500; */
+  text-transform: none;
+  color: #333;
+}
+
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+  color: #065e77;
+}
+
+.main-nav .drop-down > a:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+  top: 0;
+  right: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  right: 100%;
+  margin: 5px;
+}
+
+.main-nav .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+  content: "\f105";
+  position: absolute;
+  right: 15px;
+}
+
+/* Mobile Navigation */
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(8, 72, 102, 0.8);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #8dc2fa;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\f077";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 22px 18px 0 0;
+  color: #fff;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(9, 36, 50, 0.8);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------------
+# Secciones de la página principal
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+sección header
+--------------------------------------------------------------*/
+
+.section-header {
+  margin-top: 35px !important;
+  margin-bottom: 80px !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+.section-header h3 {
+  font-size: 220%;
+  color: #3f3731;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  /* font-family: "Montserrat", sans-serif; */
+}
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 120%;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+publicaciones
+--------------------------------------------------------------*/
+
+#publicaciones { padding: 80px 0;}
+#publicaciones .titulo-noticia { font-weight: 700; color: #444; }
+#publicaciones .leer-nota { font-weight: 700; color: #333 }
+#publicaciones .p-ver-notas { font-weight: 700; }
+#publicaciones .a-ver-notas { color: #444; }
+
+/*--------------------------------------------------------------
+Certificaciones y Acreditaciones
+--------------------------------------------------------------*/
+
+#cya {
+  padding: 60px 0 40px 0;
+  background: 
+      linear-gradient(
+      rgba(251, 252, 251, 0.04), 
+      rgba(251, 252, 251, 01)),
+      url("http://www.upmetropolitana.edu.mx/template/assets/img/fondos/6.JPG") center center no-repeat;
+  background-size: cover;
+}
+
+
+/*--------------------------------------------------------------
+oferta educativa
+--------------------------------------------------------------*/
+
+#oferta {
+  padding: 60px 0 40px 0;
+}
+
+#oferta .box {
+  padding: 30px;
+  padding-bottom: 40px !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: .25rem !important;
+  /* margin: 0 10px 40px 10px; */
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(71, 53, 120, 0.4);
+  transition: all 0.3s ease-in-out;
+  height: 485px;
+}
+
+.box .img-box {
+  margin-top: -29px; 
+  margin-right: -29px; 
+  margin-left: -29px;
+  border-top-left-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+}
+.box h4 { margin: 30px 0px 30px 0px !important; text-align: center; }
+
+.img-box img {
+  border-top-left-radius: .25rem !important;
+  border-top-right-radius: .25rem !important;
+  margin: 0px;
+}
+
+#oferta .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#oferta .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #593078;
+}
+#oferta .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+#oferta .title {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 130%;
+}
+#oferta .title a { color: #3f3731; }
+#oferta .box:hover .title a { color: #111; }
+#oferta .description {
+  font-size: 100%;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+estudiantes
+--------------------------------------------------------------*/
+
+
+#estudiantes-prueba {
+  background-color: #f5f8fd;
+  /* background-color: #fff; */
+  padding: 60px 0;
+  text-align: center;
+  /* background: #f5f8fd url("https://image.freepik.com/vector-gratis/textura-elegante-fondo-blanco_23-2148438404.jpg") center top no-repeat; */
+  /* background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/fondos/fondo-2.png") center top no-repeat; */
+  /* background-size: cover; */
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+  /* color: #fff; */
+}
+
+#estudiantes-prueba .box-main-tramites {
+  transition: all 0.3s ease-in-out;
+  height: 150px;
+  border: 1px solid #ddd;
+}
+
+#estudiantes-prueba .box-main-tramites:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#estudiantes-prueba h4 { 
+  color: #444; 
+  font-size: 120% !important; 
+}
+
+ion-icon {
+  font-size: 48px;
+}
+
+
+#estudiantes {
+  padding: 60px 0;
+  text-align: center;
+  background: rgba(89,48,120,1); 
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+  color: #fff;
+}
+#estudiantes .section-header h3 { color: #fff; margin-bottom: 70px;}
+#estudiantes .col-students-services {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+  /* padding: 15px 0; */
+}
+#estudiantes .col-students-services:hover {
+  opacity: 1;
+}
+#estudiantes .owl-nav,
+#estudiantes .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+#estudiantes .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+#estudiantes .owl-dot.active {
+  background-color: #444;
+}
+.students-carousel .col-students-services {
+  height: 250px;
+}
+.students-carousel .col-students-services i { 
+  background: #fff; 
+  color: #593078; 
+  font-weight: 200; 
+  font-size: 30px !important; 
+  padding: 30px; 
+  border-radius: 50%;
+  margin: 0px;
+}
+
+/*--------------------------------------------------------------
+Vida universitaria
+--------------------------------------------------------------*/
+/* librería isotope */
+
+#v-universitaria {
+  padding: 60px 0;
+}
+#v-universitaria .v-universitaria-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap img {
+  width: 100%;
+  height: 170px;
+  border-radius: .25rem!important;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info h4 {
+  font-size: 22px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info h4 a {
+  color: #fff;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info .link-preview i,
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info .link-details i {
+  padding-top: 6px;
+  font-size: 35px;
+  color: #fff;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info .link-preview:hover i,
+#v-universitaria .v-universitaria-item .v-universitaria-wrap .v-universitaria-info .link-details:hover i {
+  color: #fff;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap:hover {
+  background: #000;
+}
+#v-universitaria .v-universitaria-item .v-universitaria-wrap:hover .v-universitaria-info {
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+footer
+--------------------------------------------------------------*/
+
+.ligas-interes { background: #f5f8fd; padding-top: 1%; }
+
+.ligas-interes-two { background-color: rgb(245, 245, 245); }
+.ligas-interes-two h4 { color: rgba(0, 0, 24, 0.6); font-size: 19px; font-weight: 500; }
+.ligas-interes-two ul li { list-style: none; margin-left: -40px; }
+.ligas-interes-two ul li a { color: rgba(0, 0, 24, 0.6); text-transform: uppercase; font-size: 90%; }
+
+.goog-te-gadget .goog-te-combo { 
+  border-radius: 4px !important;
+  padding: 3px !important;
+  color: rgba(0, 0, 24, 0.6) !important;
+}
+
+.footer { background: #084866; }
+.menu-footer { padding: 5%; }
+.menu-footer > .ligas-interes-footer > h4 { color: #ffff; font-size: 19px; font-weight: 500; }
+.menu-footer > .ligas-interes-footer > h5 { color: #ffff; font-size: 17px; }
+.menu-footer > .ligas-interes-footer > hr { border-color: #fff; }
+.menu-footer > .ligas-interes-footer > ul > li  { list-style: none; margin-left: -40px; }
+.menu-footer > .ligas-interes-footer > ul > li > a { color: #ffff; }
+.menu-footer > .ligas-interes-footer > a > i  {   
+  font-size: 18px;
+  display: inline-block;
+  background: #092432;
+  color: #fff;
+  line-height: 1;
+  padding: 10px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.pt-mobile {
+  margin-top: 5px;
+}
+.copyright { color: #ffff !important; margin: 0px; padding: 0px; }
+
+/* Terminan secciones de la página principal */
+
+
+#mensaje-titular {
+  height: 30%;
+}
+
+
+/*--------------------------------------------------------------
+Página notas
+--------------------------------------------------------------*/
+#intro-notas {
+  width: 100%;
+  height: 40vh;
+  position: static;
+  background: #593078;
+}
+
+#intro-notas h2 {
+  color: #ffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro-notas  h2 span {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+páginas de oferta educativa
+--------------------------------------------------------------*/
+
+#oferta-box {
+  padding: 60px 0;
+  text-align: center;
+  background: #f1f3f5;
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+  /* color: #fff; */
+}
+
+.bg-oferta { 
+  background: #f5f8fd url("http://intranet.upmh.edu.mx/accesibilidad/img/universitarios/1.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.icon-ion-oferta {
+  text-align: center !important;
+}
+
+.bg-oferta ion-icon {
+  font-size: 48px;
+  text-align: center !important;
+}
+  
+
+.inicio-oferta { 
+  width: 100%;
+  height: 50vh;
+  position: relative;
+ }
+
+.inicio-oferta .title-oferta {
+  font-size: 250%;
+  font-weight: 700;
+}
+.inicio-ferta h4 { 
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+#oferta-educativa-box {
+  text-align: center;
+  background: #ffff !important;
+  padding-top: 60px; 
+}
+
+#oferta-educativa-box ion-icon {
+    background-color: #593078; 
+    padding: 20px; 
+    border-radius: 50%; 
+    color: #fff;
+  }
+
+#oferta-educativa-box p { margin-top: 10px; }
+
+/* menu de infrmación */
+
+.oferta-educativa .nav-pills .nav-link { 
+      border: 1px solid #ede8e8; 
+      margin-bottom: 13px; 
+      background-color:#f1f3f5; 
+      border-radius: 0px;
+    }
+    .oferta-educativa .nav-pills .nav-link.active, .nav-pills .show >.nav-link {
+    background-color: #ddd;
+    color: #000;
+  }
+  .oferta-educativa .nav-pills .nav-link.active, .nav-pills .show >.nav-link {
+    background-color: #fff !important;
+  }
+  .oferta-educativa .fa-circle, .fa-arrow-circle-right, .fa-check-circle-o { 
+    color: #593078; 
+    margin-right: 10px; 
+  }
+  .oferta-educativa .tab-content p { color: #444; line-height: 2.0em; }
+  .oferta-educativa .margin-lista { margin-bottom: 8px !important; }
+  .oferta-educativa .fa-menu { padding-right: 10px; }
+  .btn-audio { width: 100%; border-radius: 0px; margin-top: 20px !important; }
+
+  .oferta-educativa .margin-lista { position: relative; display: block; }
+  .oferta-educativa .margin-lista span { 
+    margin-left: 30px; 
+    margin-top: -25px;  
+    position: relative; 
+    display: block; 
+    line-height: 2.0em; 
+  }
+
+  /* plan de estudios */
+
+
+
+#faq {
+  padding: 60px 0px 60px 0px;
+  overflow: hidden;
+}
+#faq #faq-list {
+  padding: 0;
+  list-style: none;
+}
+#faq #faq-list li {
+  border-bottom: 1px solid #ebebeb;
+}
+#faq #faq-list a {
+  padding: 22px 0;
+  display: block;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: 400;
+  padding-right: 20px;
+}
+#faq #faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+#faq #faq-list p {
+  margin-bottom: 20px;
+}
+#faq #faq-list a.collapse {
+  color: #1bb1dc;
+}
+#faq #faq-list a.collapsed {
+  color: #000;
+}
+#faq #faq-list a.collapsed i::before {
+  content: "\f2c7" !important;
+}
+
+#faq #faq-list .programa-tabla i {
+  left: 0 !important;
+}
+
+  /* imagen bottom */
+
+  .img-oferta-estudia-esta-carrera { 
+        position: relative;
+        background: #f5f8fd url("https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center no-repeat;
+        background-size: cover;
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+
+
+/* .titulo-oferta { margin-top: 55px; } */
+
+#inicio-iaev,
+#inicio-ie,
+#inicio-ilt,
+#inicio-iti, 
+#inicio-ia, 
+#inicio-lcia,
+#inicio-lage,
+#inicio-lab
+.title-oferta, 
+.sub-title-oferta 
+{ color: #fff; }
+
+/* Tecnologías de la información */
+#inicio-iti {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1555066932-e78dd8fb77bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center bottom no-repeat;
+  background-size: cover;
+}
+
+.carrera-acreditada { font-size: 28px; font-weight: 700; }
+.color-1 { color: #12377b; }
+.sub { font-size: 28px; font-weight: 700; color: #444; }
+
+.pt {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#faq {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+/* Aeronáutica */
+#inicio-ia {
+  background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/universitarios/aero.jpg") center no-repeat;
+  background-size: cover;
+}
+/* Animación y efectos visuales */
+#inicio-iaev {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80") center no-repeat;
+  background-size: cover;
+}
+/* Energía */
+#inicio-ie {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80") center bottom no-repeat;
+  background-size: cover;
+}
+/* Logística y Transporte */
+#inicio-ilt {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1532635042-a6f6ad4745f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+Licenciaturas
+--------------------------------------------------------------*/
+
+/* Administración y Gestión Empresarial */
+
+#inicio-lage {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") center top no-repeat;
+  background-size: cover;
+}
+/* Arquitectura Bioclimática */
+#inicio-lab {
+  background: #f5f8fd url("https://images.unsplash.com/photo-1498268485381-33a31f91f2c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") center bottom no-repeat;
+  background-size: cover;
+}
+/* Comercio Internacional y Aduanas */
+#inicio-lcia {
+  background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/universitarios/v-universitaria-6.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+Página con accesibilidad
+--------------------------------------------------------------*/
+#servicios {
+  padding: 60px 0 40px 0;
+}
+/* divs con sombra */
+#servicios .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: .25rem !important;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  /* box-shadow: 0 10px 29px 0 rgba(71, 53, 120, 0.4); */
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  height: 275px;
+}
+#servicios .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#servicios .icon {
+  margin: 0 auto -5px auto;
+  padding-top: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #e0d5fc;
+}
+#servicios .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+#servicios .box .acc-audio { font-size: 27px; }
+
+#servicios .title {
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+  font-size: 120%;
+}
+
+#servicios .box h5 { font-size: 100%; }
+
+#servicios .title a { color: #111; }
+#servicios .box:hover .title a { color: #111; }
+#servicios .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.accesibilidad-menu .title{ margin: 20px 0px 0px 0px !important; }
+
+/* Directorio  */
+.img-directorio { 
+  width: 320px; 
+  height: 170px !important;
+  border: 3px solid #f1f3f5;
+  margin: 0 auto;
+  padding: 3px;
+}
+.table-directorio { font-weight: 600; }
+.fa .fa-volume-up { text-align: center !important; }
+
+
+/*--------------------------------------------------------------
+Página quienes somos, acerca de
+--------------------------------------------------------------*/
+#inicio-acerca-de {
+  width: 100%;
+  height: 40vh;
+  /* position: relative; */
+  background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/universitarios/IMG_1765.JPG") center top no-repeat;
+  background-size: cover;
+}
+
+#inicio-acerca-de h2 {
+  color: #ffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#acerca-de-mensaje-rectora {
+  margin-top: 60px;
+}
+
+#acerca-de h4 { 
+  font-size: 150%;
+ }
+
+.about h4 { color: #444; }
+#about .about-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#about .about-img img {
+  width: 95%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+#about .about-img img:hover {
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+#about .about-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #593078;
+  transition: .5s;
+}
+
+#about .about-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #f1f3f5;
+  transition: .5s;
+}
+
+.img-rectora {
+  /* width: 250px !important; */
+}
+
+/*--------------------------------------------------------------
+responsive
+--------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+  #inicio .inicio-info {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  #topbar {
+    display: none;
+  }
+  #header {
+    height: 70px;
+    padding: 15px 0;
+  }
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 8px 0;
+  }
+
+  #header .logo img {
+    /* padding: 0; */
+    /* margin: 7px 0; */
+    max-height: 53px;
+    margin-top: -7px;
+  }
+
+  #header.header-scrolled,
+  #header.header-pages {
+    height: 70px;
+    padding: 15px 0;
+    background-color: #084866;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.5);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #inicio {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/fondos/6.JPG") center center no-repeat;
+    background-size: cover;
+  }
+
+  .back-to-top {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  height: 40px; background-color: #084866;
+
+  .inicio-oferta {
+    height: 91vh;
+  }
+
+  #inicio {
+    height: 100vh;
+    padding: 80px 0 60px 0;
+  }
+
+  #inicio .container {
+    height: auto !important;
+  }
+
+  #inicio .inicio-img {
+    width: 80%;
+  }
+
+  #inicio .inicio-info {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #inicio .inicio-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .section-header p {
+    width: 100%;
+  }
+
+  .embed-publicaciones, .embed-responsive-16by9, .embed-publicaciones {
+    padding: 5rem !important;
+  }
+
+  .contacto { margin-bottom: 10px; }
+
+}
+
+@media (max-width: 574px) {
+
+  #inicio {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #f5f8fd url("http://www.upmetropolitana.edu.mx/template/assets/img/fondos/6.JPG") center center no-repeat;
+    background-size: cover;
+  }
+
+  .ligas-interes img { margin-bottom: 20px; }
+
+  #footer .footer-top .social-links a {
+    margin-bottom: 25px;
+  }
+
+  #inicio { height: 100vh; }
+  #inicio .inicio-info h2 {
+    color: #593078;
+    /* margin-top: 25vh; */
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  #v-universitaria .v-universitaria-item .v-universitaria-wrap img {
+    width: 100%;
+    height: 90px;
+  }
+
+  .section-header h3 {
+    font-size: 29px;
+    color: #3f3731;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .margin-blue {
+    height: 40px !important;
+  }
+
+}
+
+
+/* Tamaño en celulares */
+
+@media (max-width: 574px) {
+
+  #oferta .box { margin-bottom: 20px; }
+  #oferta .box-ing { height: 660px; }
+
+  .ul-accesibilidad li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:60px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+    border-radius: 5px;
+  }
+
+.ul-accesibilidad li:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+.ul-accesibilidad li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+  }
+
+  .img-accesibilidad {
+    width: 50px;
+  }
+
+  .img-mas-menos {
+    width: 35px !important;
+  }
+
+  .audio-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:100px;
+    width:230px;
+    z-index: 1100;
+  }
+
+  .aumentar-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:165px;
+    width:230px;
+    z-index: 1100;
+  }
+
+  .disminuir-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:230px;
+    z-index: 1100;
+  }
+
+  .contacto { margin-bottom: 10px; }
+
+  .img-directorio {
+    width: 100%;
+    height: 115px !important;
+  }
+
+  /* oferta educativa */
+
+  .inicio-oferta {
+    height: 91vh;
+  }
+  .inicio-oferta .title-oferta {
+    font-size: 250%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+mensaje (instrucciones para accesibilidad)
+--------------------------------------------------------------*/
+/* Tamaño en celulares */
+
+/* @media (max-width: 574px) {
+  .emergente { 
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    width:90vw;
+    z-index: 1100;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 29px 0 rgba(71, 53, 120, 0.4);
+    padding: 20px;
+  }
+}
