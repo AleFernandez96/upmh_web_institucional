@@ -32,7 +32,7 @@ Sitio oficial de la <a href="http://www.upmetropolitana.edu.mx/"> Universidad Po
 <h2> Tecnologías utilizdas </h2>
 
 <ul>
-  <li><a href="https://www.slimframework.com/"> Slim</a></li>
+  <li><a href="https://www.slimframework.com/"> Slim </a></li>
   <li><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"> Bootstrap </a></li>
 </ul>
 
