@@ -1,16 +1,37 @@
 # upmh_web_institucional
-Página oficial de la Universidad Politécnica Metropolitana de Hidalgo
+Sitio oficial de la <a href="http://www.upmetropolitana.edu.mx/"> Universidad Politécnica Metropolitana de Hidalgo </a>
 
-<p> Es una aplicación web desarrollada principalmente con Slim, bootstrap v4.3, php, javascrip, html y css  </p>
+
+<p> Es una aplicación web desarrollada principalmente con php, javascrip, html y css ademas de integrar una herramienta de accesibildad para que usuarios con discapacidad visual entre otras puedan navegar sin algún problema </p>
+
+<h2> Secciones </h2>
 
 <ul>
-  <li> </li>
-  <li> </li>
-  <li> </li>
-  <li> </li>
-  <li> </li>
-  <li> </li>
-  <li> </li>
+  <li> Landing page de inicio</li>
+  <li> Acerca de </li>
+  <li> Valores </li>
+  <li> Directorio </li>
+  <li> Organigrama </li>
+  <li> Mensaje de la titular </li>
+  <li> Comité de etica </li>
+  
+  <li> Oferta educativa</li>
+  
+  <li> Transparencia UPMH</li>
+  
+  <li> Reglamento </li>
+  <li> Becas </li>
+  <li> Cuadro de Honor </li>
+  <li> Notas informativas </li>
+  <li> Bolsa de Trabajo </li>
+  <li> Centro de Información </li>
+  <li> Contraloria Social</li>
 </ul>
 
-<h1> Tecnologías utilizdas </h1>
+<h2> Tecnologías utilizdas </h2>
+
+<ul>
+  <li><a href="https://www.slimframework.com/"> Slim</a></li>
+  <li><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/"> Bootstrap </a></li>
+</ul>
+  
