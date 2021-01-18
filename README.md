@@ -1,6 +1,7 @@
 # upmh_web_institucional
 Sitio oficial de la <a href="http://www.upmetropolitana.edu.mx/"> Universidad Politécnica Metropolitana de Hidalgo </a>
 
+<img src="http://www.upmetropolitana.edu.mx/template/assets/img/logos-oficiales/logo2.jpg">
 
 <p> Es una aplicación web desarrollada principalmente con php, javascrip, html y css ademas de integrar una herramienta de accesibildad para que usuarios con discapacidad visual entre otras puedan navegar sin algún problema </p>
 
